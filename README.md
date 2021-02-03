@@ -1,11 +1,8 @@
 # flutter_todo_example
 
-A new Flutter project.
+A simple example app showcasing my usual setup. 
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
@@ -14,4 +11,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
 # flutter_todo_example
+
+Run the following to generate all the files needed for MobX to work. 
+```flutter packages pub run build_runner build --delete-conflicting-outputs``` 

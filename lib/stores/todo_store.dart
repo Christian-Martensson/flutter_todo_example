@@ -1,4 +1,5 @@
 import 'package:flutter_todo_example/models/todo.dart';
+import 'package:flutter_todo_example/utilities.dart';
 import 'package:mobx/mobx.dart';
 part 'todo_store.g.dart';
 
@@ -23,5 +24,6 @@ abstract class _TodoStoreBase with Store {
   @action
   void deleteChecked() {
     todos.removeWhere((e) => e.checked);
+    toast("All checked deleted");
   }
 }
