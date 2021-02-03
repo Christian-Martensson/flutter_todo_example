@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_todo_example/getit.dart';
 import 'package:flutter_todo_example/models/todo.dart';
+import 'package:flutter_todo_example/stores/todo_store.dart';
 import 'package:flutter_todo_example/utilities.dart';
 import 'package:flutter_todo_example/views/dialogs/todo_dialog.dart';
 import 'package:flutter_todo_example/widgets/drawer.dart';
@@ -9,7 +10,7 @@ import 'package:flutter_todo_example/widgets/popup_menu.dart';
 import 'package:flutter_todo_example/widgets/todo_tile.dart';
 
 class TodoView extends StatelessWidget {
-  final store = todoStore;
+  final TodoStore store = todoStore;
 
   @override
   Widget build(BuildContext context) {
